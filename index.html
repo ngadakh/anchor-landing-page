@@ -87,6 +87,7 @@
             height: 350px;
             border-radius: 50%;
             object-fit: cover;
+            object-position: center;
             box-shadow: 0 15px 50px rgba(123, 79, 191, 0.3);
             border: 5px solid white;
         }
@@ -373,9 +374,32 @@
 
         .event-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr 2fr 1fr;
             gap: 25px;
             margin-bottom: 20px;
+            align-items: start;
+        }
+
+        .gallery-middle {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .wide-item {
+            grid-column: span 2;
+        }
+
+        .gallery-celebrity {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .gallery-cultural {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
         }
 
         .gallery-item {
@@ -394,10 +418,20 @@
 
         .gallery-item img {
             width: 100%;
-            height: 300px;
+            height: auto;
             object-fit: cover;
+            object-position: center;
             display: block;
             transition: all 0.4s ease;
+        }
+
+        .portrait-left img,
+        .portrait-right img {
+            min-height: 400px;
+        }
+
+        .gallery-middle .gallery-item img {
+            height: 250px;
         }
 
         .gallery-item:hover img {
@@ -411,12 +445,12 @@
             right: 0;
             background: linear-gradient(to top, rgba(123, 79, 191, 0.9), transparent);
             padding: 20px;
-            transform: translateY(100%);
+            transform: translateY(0);
             transition: all 0.4s ease;
         }
 
         .gallery-item:hover .gallery-overlay {
-            transform: translateY(0);
+            background: linear-gradient(to top, rgba(123, 79, 191, 1), rgba(123, 79, 191, 0.3));
         }
 
         .gallery-overlay p {
@@ -428,12 +462,22 @@
 
         @media (max-width: 768px) {
             .event-gallery {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
 
-            .gallery-item img {
-                height: 250px;
+            .gallery-middle {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .portrait-left img,
+            .portrait-right img {
+                min-height: 300px;
+            }
+
+            .gallery-middle .gallery-item img {
+                height: 220px;
             }
         }
 
@@ -1060,7 +1104,7 @@
         <div class="workshop-container">
             <div class="workshop-image">
                 <div class="workshop-image-wrapper">
-                    <img src="images/20240601_131950963_iOS_0.jpg" alt="Kanchan Gadakh - Professional Anchor">
+                    <img src="images/kanchan-pic-1.jpeg" alt="Kanchan Gadakh - Professional Anchor">
                 </div>
                 <div class="workshop-profile-info">
                     <div class="workshop-profile-name">Kanchan Gadakh</div>
@@ -1223,25 +1267,25 @@
             <div class="logo-slider">
                 <div class="logo-track">
                     <!-- First set of logos -->
-                    <div><img src="images/tata-motors-logo.png" alt="Tata Motors"></div>
-                    <div class="logo-item"><img src="images/hdfc-bank-logo.png" alt="HDFC Bank"></div>
-                    <div class="logo-item"><img src="images/globant-logo.png" alt="Globant"></div>
-                    <div class="logo-item"><img src="images/bajaj-electrical-logo.png" alt="Bajaj Electrical"></div>
-                    <div class="logo-item"><img src="images/apollo-tyres-logo.png" alt="Apollo Tyres"></div>
-                    <div class="logo-item"><img src="images/idfc-first-logo.png" alt="IDFC First"></div>
-                    <div class="logo-item"><img src="images/messy-logo.png" alt="Messy"></div>
-                    <div class="logo-item"><img src="images/sonalika-logo.png" alt="Sonalika"></div>
-                    <div class="logo-item"><img src="images/diamond-parks.png" alt="Sonalika"></div>
+                    <div><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
+                    <div class="logo-item"><img src="images/hdfc-bank-logo.jpeg" alt="HDFC Bank"></div>
+                    <div class="logo-item"><img src="images/globant-logo.jpeg" alt="Globant"></div>
+                    <div class="logo-item"><img src="images/bajaj-electrical-logo.jpeg" alt="Bajaj Electrical"></div>
+                    <div class="logo-item"><img src="images/apollo-tyres-logo.jpeg" alt="Apollo Tyres"></div>
+                    <div class="logo-item"><img src="images/idfc-first-logo.jpeg" alt="IDFC First"></div>
+                    <div class="logo-item"><img src="images/messy-logo.jpeg" alt="Messy"></div>
+                    <div class="logo-item"><img src="images/sonalika-logo.jpeg" alt="Sonalika"></div>
+                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Sonalika"></div>
                     <!-- Duplicate set for seamless loop -->
-                    <div><img src="images/tata-motors-logo.png" alt="Tata Motors"></div>
-                    <div class="logo-item"><img src="images/hdfc-bank-logo.png" alt="HDFC Bank"></div>
-                    <div class="logo-item"><img src="images/globant-logo.png" alt="Globant"></div>
-                    <div class="logo-item"><img src="images/bajaj-electrical-logo.png" alt="Bajaj Electrical"></div>
-                    <div class="logo-item"><img src="images/apollo-tyres-logo.png" alt="Apollo Tyres"></div>
-                    <div class="logo-item"><img src="images/idfc-first-logo.png" alt="IDFC First"></div>
-                    <div class="logo-item"><img src="images/messy-logo.png" alt="Messy"></div>
-                    <div class="logo-item"><img src="images/sonalika-logo.png" alt="Sonalika"></div>
-                    <div class="logo-item"><img src="images/diamond-parks.png" alt="Sonalika"></div>
+                    <div><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
+                    <div class="logo-item"><img src="images/hdfc-bank-logo.jpeg" alt="HDFC Bank"></div>
+                    <div class="logo-item"><img src="images/globant-logo.jpeg" alt="Globant"></div>
+                    <div class="logo-item"><img src="images/bajaj-electrical-logo.jpeg" alt="Bajaj Electrical"></div>
+                    <div class="logo-item"><img src="images/apollo-tyres-logo.jpeg" alt="Apollo Tyres"></div>
+                    <div class="logo-item"><img src="images/idfc-first-logo.jpeg" alt="IDFC First"></div>
+                    <div class="logo-item"><img src="images/messy-logo.jpeg" alt="Messy"></div>
+                    <div class="logo-item"><img src="images/sonalika-logo.jpeg" alt="Sonalika"></div>
+                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Sonalika"></div>
                 </div>
             </div>
         </div>
@@ -1252,40 +1296,75 @@
         <div class="container">
             <h2 class="section-title">🎪 Past Event <span>Highlights</span></h2>
             <div class="event-gallery">
-                <div class="gallery-item">
-                    <img src="images/event-1.png" alt="Past Event 1">
-                    <div class="gallery-overlay">
-                        <p>Live Training Session</p>
+                <!-- Left Portrait - Celebrity Events -->
+                <div class="gallery-celebrity">
+                    <div class="gallery-item portrait-left">
+                        <img src="images/event-5.jpeg" alt="Past Event 5">
+                        <div class="gallery-overlay">
+                            <p>Celebrity Event</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-1.jpeg" alt="Past Event 1">
+                        <div class="gallery-overlay">
+                            <p>Celebrity Event</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/event-2.png" alt="Past Event 2">
-                    <div class="gallery-overlay">
-                        <p>Participant Interaction</p>
+
+                <!-- Middle Landscape Images -->
+                <div class="gallery-middle">
+                    <div class="gallery-item">
+                        <img src="images/event-2.jpeg" alt="Past Event 2">
+                        <div class="gallery-overlay">
+                            <p>Participant Interaction</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-3.jpeg" alt="Past Event 3">
+                        <div class="gallery-overlay">
+                            <p>Live Training Session</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-4.jpeg" alt="Past Event 4">
+                        <div class="gallery-overlay">
+                            <p>Corporate Event</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/event-9.jpeg" alt="Past Event 9">
+                        <div class="gallery-overlay">
+                            <p>Corporate Event</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item wide-item">
+                        <img src="images/event-8.jpeg" alt="Past Event 8">
+                        <div class="gallery-overlay">
+                            <p>Corporate Event</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item wide-item">
+                        <img src="images/event-10.jpeg" alt="Past Event 10">
+                        <div class="gallery-overlay">
+                            <p>Corporate Event</p>
+                        </div>
                     </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/event-3.png" alt="Past Event 3">
-                    <div class="gallery-overlay">
-                        <p>Stage Performance Practice</p>
+
+                <!-- Right Portrait - Cultural Events -->
+                <div class="gallery-cultural">
+                    <div class="gallery-item">
+                        <img src="images/event-6.jpeg" alt="Past Event 6">
+                        <div class="gallery-overlay">
+                            <p>Cultural Event</p>
+                        </div>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/event-4.png" alt="Past Event 4">
-                    <div class="gallery-overlay">
-                        <p>Group Activities</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/event-5.png" alt="Past Event 5">
-                    <div class="gallery-overlay">
-                        <p>Confidence Building Workshop</p>
-                    </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="images/event-6.jpg" alt="Past Event 6">
-                    <div class="gallery-overlay">
-                        <p>Happy Participants</p>
+                    <div class="gallery-item portrait-right">
+                        <img src="images/event-7.jpeg" alt="Past Event 7">
+                        <div class="gallery-overlay">
+                            <p>Cultural Event</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1408,7 +1487,7 @@
     <section class="section trainer-section">
         <div class="trainer-container">
             <div class="trainer-image-wrapper">
-                <img src="images/20240601_131950963_iOS_0.jpg" alt="Kanchan Gadakh - Professional Anchor & Trainer">
+                <img src="images/kanchan-pic-2.jpeg" alt="Kanchan Gadakh - Professional Anchor & Trainer">
             </div>
 
             <div class="trainer-content">
@@ -1417,7 +1496,7 @@
                 <p>🎤 Communications & Career Coach</p>
                 <p>⭐ Celebrity Anchor</p>
                 <p>📚 5+ years of experience in public speaking training and corporate workshops</p>
-                <a href="https://www.instagram.com/anchor__kanchan_gadakh_/" target="_blank" class="social-link">
+                <a href="https://www.instagram.com/anchorkanchangadakh/" target="_blank" class="social-link">
                     📱 Follow on Instagram
                 </a>
             </div>
