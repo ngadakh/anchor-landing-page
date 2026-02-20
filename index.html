@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Speaking Mastery - Kanchan Gadakh</title>
+    <title>Kanchan Gadakh - Professional Anchor & Public Speaking Coach</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -27,335 +27,97 @@
             padding: 0 20px;
         }
 
-        /* Header/Hero Section */
+        /* Navigation */
+        nav {
+            background: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            font-weight: 400;
+            color: #7B4FBF;
+            line-height: 1;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #3A3A3A;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #7B4FBF;
+        }
+
+        .webinar-btn {
+            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .webinar-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 68, 126, 0.3);
+        }
+
+        /* Hero Section */
         .hero-section {
             background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 20px 20px;
             text-align: center;
         }
 
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .hero-section h1 {
-            font-size: 42px;
+            font-size: 48px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero-section .subtitle {
             font-size: 20px;
             font-weight: 400;
-            margin-bottom: 20px;
-        }
-
-        .hero-section .tagline {
-            font-size: 24px;
-            font-weight: 500;
-            margin-top: 20px;
-            letter-spacing: 1px;
-        }
-
-        /* Webinar Details Section */
-        .workshop-section {
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #F2F8FF 0%, #E8F4F8 100%);
-        }
-
-        .workshop-container {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 50px;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .workshop-image {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .workshop-image-wrapper {
-            position: relative;
-        }
-
-        .workshop-image img {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center;
-            box-shadow: 0 15px 50px rgba(123, 79, 191, 0.3);
-            border: 5px solid white;
-        }
-
-        .workshop-profile-info {
-            text-align: center;
-        }
-
-        .workshop-profile-name {
-            font-size: 28px;
-            font-weight: 700;
-            color: #000;
-            margin-bottom: 8px;
-        }
-
-        .workshop-profile-title {
-            font-size: 16px;
-            color: #555;
-            font-weight: 500;
-            line-height: 1.5;
-        }
-
-        .workshop-details {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 32px rgba(123, 79, 191, 0.2);
-            text-align: center;
-        }
-
-        .workshop-details h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #000;
             margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .workshop-details h2 span {
-            color: #D4447E;
-        }
-
-        .workshop-info-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-bottom: 10px;
-        }
-
-        .workshop-info-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 20px;
-            background: #F8F0F7;
-            border-radius: 12px;
-            border: 2px solid #E8D9F0;
-            transition: all 0.3s ease;
-            text-align: left;
-        }
-
-        .workshop-info-item:hover {
-            border-color: #7B4FBF;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(123, 79, 191, 0.2);
-        }
-
-        .workshop-icon {
-            font-size: 28px;
-            min-width: 40px;
-            text-align: center;
-        }
-
-        .workshop-info-content {
-            flex: 1;
-        }
-
-        .workshop-info-label {
-            font-size: 14px;
-            color: #666;
-            font-weight: 500;
-            margin-bottom: 3px;
-        }
-
-        .workshop-info-value {
-            font-size: 18px;
-            color: #000;
-            font-weight: 600;
-        }
-
-        .workshop-register-btn {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 18px 40px;
-            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 20px;
-            font-weight: 700;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 24px rgba(212, 68, 126, 0.3);
-            animation: blinkMove 2s ease-in-out infinite;
-        }
-
-        .workshop-register-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(212, 68, 126, 0.4);
-            animation-play-state: paused;
-        }
-
-        @keyframes blinkMove {
-            0%, 100% {
-                transform: translateX(0);
-                box-shadow: 0 8px 24px rgba(212, 68, 126, 0.3);
-            }
-            25% {
-                transform: translateX(-5px);
-                box-shadow: 0 8px 28px rgba(212, 68, 126, 0.5);
-            }
-            50% {
-                transform: translateX(5px);
-                box-shadow: 0 8px 32px rgba(212, 68, 126, 0.6);
-            }
-            75% {
-                transform: translateX(-5px);
-                box-shadow: 0 8px 28px rgba(212, 68, 126, 0.5);
-            }
-        }
-
-        @keyframes textBlink {
-            0%, 100% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0.3;
-            }
-        }
-
-        .blink-text {
-            animation: textBlink 1s ease-in-out infinite;
-        }
-
-        /* Sticky Footer Bar */
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
-            padding: 20px;
-            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.3);
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.4s ease-in-out;
-        }
-
-        .sticky-footer.show {
-            transform: translateY(0);
-        }
-
-        .sticky-footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .sticky-footer-info {
-            color: white;
-            flex: 1;
-        }
-
-        .sticky-footer-urgent {
-            font-size: 26px;
-            font-weight: 700;
-            margin-bottom: 5px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .sticky-footer-urgent .pulse {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background: #ff4444;
-            border-radius: 50%;
-            animation: pulse 1.5s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.3);
-                opacity: 0.7;
-            }
-        }
-
-        .sticky-footer-deadline {
-            font-size: 18px;
-            font-weight: 500;
             opacity: 0.95;
-        }
-
-        .sticky-footer-btn {
-            flex-shrink: 0;
-        }
-
-        .sticky-footer-btn a {
-            display: inline-block;
-            padding: 18px 45px;
-            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 20px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(212, 68, 126, 0.4);
-            white-space: nowrap;
-            animation: blinkMove 2s ease-in-out infinite;
-        }
-
-        .sticky-footer-btn a:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(212, 68, 126, 0.6);
-            animation-play-state: paused;
-        }
-
-        @media (max-width: 768px) {
-            .sticky-footer-container {
-                flex-direction: column;
-                gap: 12px;
-                text-align: center;
-            }
-
-            .sticky-footer-urgent {
-                font-size: 20px;
-                justify-content: center;
-            }
-
-            .sticky-footer-deadline {
-                font-size: 15px;
-            }
-
-            .sticky-footer-btn a {
-                padding: 15px 35px;
-                font-size: 18px;
-            }
         }
 
         /* Section Styling */
         .section {
-            padding: 60px 20px;
+            padding: 80px 20px;
         }
 
         .section-title {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 700;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             color: #000000;
         }
 
@@ -363,13 +125,166 @@
             color: #D4447E;
         }
 
-        /* Event Gallery Section */
-        .gallery-subtitle {
-            text-align: center;
+        /* About Section */
+        .about-section {
+            background: #ffffff;
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-image img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 15px 50px rgba(123, 79, 191, 0.3);
+            border: 5px solid white;
+        }
+
+        .about-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #7B4FBF;
+        }
+
+        .about-content p {
             font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.8;
             color: #555;
-            margin-bottom: 40px;
-            font-weight: 500;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            background: #F8F0F7;
+            border-radius: 10px;
+        }
+
+        .highlight-icon {
+            font-size: 24px;
+        }
+
+        .highlight-text {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: linear-gradient(135deg, #F8F0F7 0%, #F0E5F5 100%);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(123, 79, 191, 0.3);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            color: #7B4FBF;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Client Logos Section */
+        .clients-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+
+        .logo-slider {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .logo-track {
+            display: flex;
+            animation: scroll 25s linear infinite;
+            width: fit-content;
+        }
+
+        .logo-item {
+            flex-shrink: 0;
+            padding: 0;
+            background: transparent;
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 281px;
+            height: 179px;
+        }
+
+        .logo-item img {
+            width: 281px;
+            height: 179px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .logo-slider:hover .logo-track {
+            animation-play-state: paused;
+        }
+
+        /* Event Gallery Section */
+        .gallery-section {
+            background: #fafafa;
         }
 
         .event-gallery {
@@ -390,12 +305,7 @@
             grid-column: span 2;
         }
 
-        .gallery-celebrity {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
+        .gallery-celebrity,
         .gallery-cultural {
             display: flex;
             flex-direction: column;
@@ -460,385 +370,6 @@
             margin: 0;
         }
 
-        @media (max-width: 768px) {
-            .event-gallery {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .gallery-middle {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
-            .portrait-left img,
-            .portrait-right img {
-                min-height: 300px;
-            }
-
-            .gallery-middle .gallery-item img {
-                height: 220px;
-            }
-        }
-
-        /* Target Audience Cards */
-        .audience-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .audience-card {
-            background: #ffffff;
-            border: 2px solid #E8D9F0;
-            border-radius: 16px;
-            padding: 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(123, 79, 191, 0.1);
-        }
-
-        .audience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(123, 79, 191, 0.2);
-            border-color: #7B4FBF;
-        }
-
-        .audience-card h3 {
-            color: #7B4FBF;
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        /* Module Cards */
-        .modules-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .module-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 35px;
-            border-left: 5px solid #D4447E;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-        }
-
-        .module-card:hover {
-            box-shadow: 0 8px 32px rgba(212, 68, 126, 0.25);
-            transform: translateX(5px);
-        }
-
-        .module-card h3 {
-            font-size: 24px;
-            color: #7B4FBF;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .module-card ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .module-card li {
-            padding: 8px 0 8px 30px;
-            position: relative;
-            font-size: 16px;
-        }
-
-        .module-card li:before {
-            content: "•";
-            color: #D4447E;
-            font-size: 24px;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Info Section */
-        .info-section {
-            background: linear-gradient(135deg, #F8F0F7 0%, #F0E5F5 100%);
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .info-box {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        }
-
-        .info-box h3 {
-            color: #7B4FBF;
-            font-size: 22px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .info-box ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .info-box li {
-            padding: 6px 0 6px 25px;
-            position: relative;
-        }
-
-        .info-box li:before {
-            content: "✓";
-            color: #D4447E;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Trainer Profile Section */
-        .trainer-section {
-            background: #ffffff;
-            padding: 60px 20px;
-            margin-bottom: 80px;
-        }
-
-        .trainer-container {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 50px;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #f8f4ff 0%, #fef5fa 100%);
-            padding: 50px;
-            border-radius: 24px;
-            box-shadow: 0 12px 48px rgba(123, 79, 191, 0.15);
-        }
-
-        .trainer-image-wrapper {
-            text-align: center;
-        }
-
-        .trainer-image-wrapper img {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 15px 50px rgba(123, 79, 191, 0.3);
-            border: 5px solid white;
-        }
-
-        .trainer-content {
-            text-align: left;
-        }
-
-        .trainer-content h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .trainer-content h3 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #7B4FBF;
-        }
-
-        .trainer-content p {
-            font-size: 18px;
-            margin-bottom: 15px;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .trainer-highlight {
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 20px;
-            margin-bottom: 25px;
-            color: #D4447E;
-        }
-
-        @media (max-width: 968px) {
-            .trainer-container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-                text-align: center;
-                padding: 30px 20px;
-            }
-
-            .trainer-content {
-                text-align: center;
-            }
-
-            .trainer-image-wrapper img {
-                width: 280px;
-                height: 280px;
-            }
-        }
-
-        .social-link {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 24px rgba(123, 79, 191, 0.3);
-        }
-
-        .social-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 32px rgba(123, 79, 191, 0.5);
-            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
-        }
-
-        /* CTA Button */
-        .cta-section {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(135deg, #F8F0F7 0%, #ffffff 100%);
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 20px 50px;
-            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 20px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 20px 60px rgba(212, 68, 126, 0.35);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 80px rgba(212, 68, 126, 0.45);
-        }
-
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            color: #000000;
-        }
-
-        /* Pricing Section */
-        .pricing-section {
-            background: #fafafa;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
-            border: 3px solid transparent;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 40px rgba(123, 79, 191, 0.3);
-            border-color: #7B4FBF;
-        }
-
-        .pricing-card.featured {
-            border-color: #D4447E;
-            background: linear-gradient(135deg, #F8F0F7 0%, #ffffff 100%);
-        }
-
-        .pricing-badge {
-            display: inline-block;
-            background: #D4447E;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .pricing-card h3 {
-            font-size: 26px;
-            color: #000000;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .price {
-            font-size: 42px;
-            color: #7B4FBF;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .price-duration {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        .pricing-features {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .pricing-features li {
-            padding: 10px 0 10px 30px;
-            position: relative;
-            font-size: 15px;
-        }
-
-        .pricing-features li:before {
-            content: "✓";
-            color: #D4447E;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 18px;
-        }
-
-        .pricing-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .pricing-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 24px rgba(123, 79, 191, 0.4);
-        }
-
         /* Testimonials Section */
         .testimonials-section {
             background: linear-gradient(135deg, #F8F0F7 0%, #F0E5F5 100%);
@@ -884,8 +415,8 @@
         }
 
         .testimonial-avatar {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
             display: flex;
@@ -894,6 +425,7 @@
             color: white;
             font-weight: 700;
             font-size: 20px;
+            overflow: hidden;
         }
 
         .testimonial-details h4 {
@@ -908,7 +440,7 @@
             color: #666;
         }
 
-        /* Contact Form Section */
+        /* Contact Section */
         .contact-section {
             background: #ffffff;
         }
@@ -929,345 +461,218 @@
             margin-top: 10px;
         }
 
-        .contact-form {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            color: #000;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #E8D9F0;
-            border-radius: 10px;
-            font-size: 16px;
-            font-family: 'Noto Sans Devanagari', 'DM Sans', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #7B4FBF;
-            box-shadow: 0 0 0 3px rgba(123, 79, 191, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .submit-button {
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(212, 68, 126, 0.3);
-        }
-
-        .submit-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(212, 68, 126, 0.4);
-        }
-
         .contact-info {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-top: 40px;
-            text-align: center;
         }
 
         .contact-info-item {
-            padding: 20px;
+            padding: 30px;
             background: #F8F0F7;
-            border-radius: 12px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(123, 79, 191, 0.2);
         }
 
         .contact-info-item h4 {
             color: #7B4FBF;
-            margin-bottom: 8px;
-            font-size: 16px;
+            margin-bottom: 15px;
+            font-size: 20px;
         }
 
         .contact-info-item p {
             color: #555;
-            font-size: 14px;
+            font-size: 16px;
+        }
+
+        .social-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #7B4FBF 0%, #5E3A9A 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(123, 79, 191, 0.3);
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(123, 79, 191, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            background: #2C2C2C;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 10px;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
             .hero-section h1 {
                 font-size: 32px;
             }
 
-            .hero-section .tagline {
+            .hero-section .subtitle {
                 font-size: 18px;
             }
 
-            .section-title {
-                font-size: 26px;
-            }
-
-            .module-card {
-                padding: 25px;
-            }
-
-            .cta-section h2 {
-                font-size: 28px;
-            }
-
-            .pricing-grid,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-form {
-                padding: 30px 20px;
-            }
-
-            .price {
-                font-size: 36px;
-            }
-
-            .workshop-container {
+            .about-container {
                 grid-template-columns: 1fr;
                 gap: 30px;
+                text-align: center;
             }
 
-            .workshop-image img {
-                width: 250px;
-                height: 250px;
+            .about-image img {
+                width: 280px;
+                height: 280px;
             }
 
-            .workshop-profile-name {
-                font-size: 22px;
-            }
-
-            .workshop-profile-title {
-                font-size: 14px;
-            }
-
-            .workshop-info-grid {
+            .about-highlights {
                 grid-template-columns: 1fr;
             }
 
-            .workshop-details h2 {
-                font-size: 26px;
+            .event-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-middle {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .portrait-left img,
+            .portrait-right img {
+                min-height: 300px;
+            }
+
+            .gallery-middle .gallery-item img {
+                height: 220px;
+            }
+
+            .section-title {
+                font-size: 28px;
             }
         }
     </style>
 </head>
 <body>
-    <div style="background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%); padding: 15px 20px; text-align: center; border-bottom: 3px solid #5E3A9A;">
-        <h2 style="color: white; font-size: 22px; font-weight: 700; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); line-height: 1.3;">
-            🔥 1-Hour Live Online Webinar on 20 Feb | <span class="blink-text">Only 5 Seats Left!</span>
-        </h2>
-    </div>
-
-    <section class="hero-section">
+    <!-- Navigation -->
+    <nav>
         <div class="container">
-            <h1>Transform Your Stage Fear into Stage Power!</h1>
-            <p class="subtitle">Master the Art of Confident Anchoring with Kanchan Gadakh</p>
-            <p class="tagline">स्टेज फिअर दूर करा | आत्मविश्वासाने बोलणे शिका | तुमचं व्यक्तिमत्व वाढवा</p>
-            <div style="margin-top: 25px; padding: 15px 25px; background: rgba(255,255,255,0.15); border-radius: 12px; display: inline-block; border: 2px solid rgba(255,255,255,0.3);">
-                <p style="color: white; margin: 0 0 8px 0; font-size: 17px; font-weight: 600;">✨ Live Interactive Online Session</p>
-                <p style="color: white; margin: 0; font-size: 15px; font-weight: 400;">🏠 Attend from Home | 💻 No Travel Needed | 🌐 Join from Anywhere</p>
-            </div>
+            <div class="logo">Kanchan Gadakh</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="webinar.html" class="webinar-btn">🔥 Live Webinar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Professional Anchor & Public Speaking Coach</h1>
+            <p class="subtitle">Transforming events into unforgettable experiences | Empowering voices through training</p>
         </div>
     </section>
 
-    <!-- Webinar Details Section -->
-    <section class="workshop-section">
-        <div class="workshop-container">
-            <div class="workshop-image">
-                <div class="workshop-image-wrapper">
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">Meet <span>Kanchan Gadakh</span></h2>
+            <div class="about-container">
+                <div class="about-image">
                     <img src="images/kanchan-pic-1.jpeg" alt="Kanchan Gadakh - Professional Anchor">
                 </div>
-                <div class="workshop-profile-info">
-                    <div class="workshop-profile-name">Kanchan Gadakh</div>
-                    <div class="workshop-profile-title">Public Speaking Specialist | Anchor | Trainer</div>
-                </div>
-            </div>
-
-            <div class="workshop-details">
-                <h2>🎯 <span>Live Webinar Details</span></h2>
-
-                <div class="workshop-info-grid">
-                    <div class="workshop-info-item">
-                        <div class="workshop-icon">📅</div>
-                        <div class="workshop-info-content">
-                            <div class="workshop-info-label">Date</div>
-                            <div class="workshop-info-value">20 February 2026</div>
+                <div class="about-content">
+                    <h2>Celebrity Anchor | Communications Coach</h2>
+                    <p>Hello! I'm Kanchan Gadakh, a professional anchor and public speaking trainer with over 5+ years of experience transforming stages and empowering individuals.</p>
+                    <p>From corporate events to celebrity gatherings, cultural programs to educational workshops - I bring energy, professionalism, and authenticity to every platform.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎤</div>
+                            <div class="highlight-text">Professional Anchor</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎓</div>
+                            <div class="highlight-text">Public Speaking Trainer</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⭐</div>
+                            <div class="highlight-text">Celebrity Events</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💼</div>
+                            <div class="highlight-text">Corporate Workshops</div>
                         </div>
                     </div>
-
-                    <div class="workshop-info-item">
-                        <div class="workshop-icon">🕐</div>
-                        <div class="workshop-info-content">
-                            <div class="workshop-info-label">Time</div>
-                            <div class="workshop-info-value">8:00 PM (IST)</div>
-                        </div>
-                    </div>
-
-                    <div class="workshop-info-item">
-                        <div class="workshop-icon">💻</div>
-                        <div class="workshop-info-content">
-                            <div class="workshop-info-label">Platform</div>
-                            <div class="workshop-info-value">Google Meet<br><small style="font-size: 12px; color: #666;">(Link sent after registration)</small></div>
-                        </div>
-                    </div>
-
-                    <div class="workshop-info-item">
-                        <div class="workshop-icon">🗣️</div>
-                        <div class="workshop-info-content">
-                            <div class="workshop-info-label">Language</div>
-                            <div class="workshop-info-value">Marathi & Hindi<br><small style="font-size: 12px; color: #666;">(Ask questions in either)</small></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="text-align: center;">
-                    <a href="#contact" class="workshop-register-btn">Register Now at ₹99/-</a>
-                </div>
-
-                <div style="margin-top: 25px; padding: 15px; background: #f8f4ff; border-left: 4px solid #7B4FBF; border-radius: 8px; text-align: left;">
-                    <p style="margin: 0; font-size: 14px; color: #555; line-height: 1.6;">
-                        <strong style="color: #7B4FBF;">📱 What You Need:</strong> Smartphone/Laptop + Stable Internet Connection + Quiet Space for Learning
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Modules Section -->
-    <section class="section" style="background-color: #fafafa;">
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
         <div class="container">
-            <h2 class="section-title">🧠 तुम्ही काय <span>शिकाल</span>?</h2>
-            <div class="modules-container">
-
-                <div class="module-card">
-                    <h3>🔹Basics of Public speaking</h3>
-                    <ul>
-                        <li>पब्लिक स्पीकिंग म्हणजे काय?</li>
-                        <li>स्टेज भीती का वाटते आणि ती कशी दूर करायची</li>
-                        <li>आत्मविश्वास वाढवण्याचे सोपे तंत्र</li>
-                        <li>स्पीकरची मानसिक तयारी</li>
-                    </ul>
+            <h2 class="section-title">My <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎤</div>
+                    <h3>Event Anchoring</h3>
+                    <p>Professional anchoring for corporate events, weddings, cultural programs, and celebrity gatherings. Bringing energy and seamless flow to your special occasions.</p>
                 </div>
-
-                <div class="module-card">
-                    <h3>🔹Voice Training & Speech</h3>
-                    <ul>
-                        <li>आवाजातील स्पष्टता, टोन व पिच</li>
-                        <li>Voice Modulation तंत्र</li>
-                        <li>Clear Pronunciation</li>
-                        <li>Breathing Techniques</li>
-                    </ul>
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Public Speaking Training</h3>
+                    <p>Comprehensive training programs to overcome stage fear, develop confidence, and master the art of public speaking. Individual and group sessions available.</p>
                 </div>
-
-                <div class="module-card">
-                    <h3>🔹Body Language & Stage Presence</h3>
-                    <ul>
-                        <li>स्टेजवरील उभे राहणे व हालचाल</li>
-                        <li>Eye Contact आणि Facial Expressions</li>
-                        <li>Gestures and mic handling</li>
-                        <li>First Impression on audience</li>
-                    </ul>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Corporate Workshops</h3>
+                    <p>Customized communication and presentation skills workshops for organizations. Enhance your team's confidence and professional presence.</p>
                 </div>
-
-                <div class="module-card">
-                    <h3>🔹प्रभावी बोलण्याची रचना</h3>
-                    <ul>
-                        <li>भाषणाची सुरुवात आणि शेवट कसा करायचा</li>
-                        <li>कंटेंट कसा तयार करायचा</li>
-                        <li>Storytelling Techniques</li>
-                        <li>श्रोत्यांशी Emotional Connect</li>
-                    </ul>
+                <div class="service-card">
+                    <div class="service-icon">🗣️</div>
+                    <h3>Voice & Personality Development</h3>
+                    <p>Voice modulation, body language, and overall personality enhancement training. Develop your unique communication style.</p>
                 </div>
-
-                <div class="module-card">
-                    <h3>🔹प्रत्यक्ष सराव व परफॉर्मन्स</h3>
-                    <ul>
-                        <li>Live Speaking Practice</li>
-                        <li>कॅमेरा / Zoom वर बोलण्याचा आत्मविश्वास</li>
-                    </ul>
-                </div>
-
             </div>
         </div>
     </section>
 
     <!-- Client Logos Section -->
-    <section class="section" style="background-color: #f8f9fa; padding: 60px 0; overflow: hidden;">
+    <section class="clients-section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Our <span>Trusted Clients</span></h2>
-            <style>
-                .logo-slider {
-                    overflow: hidden;
-                    position: relative;
-                    width: 100%;
-                }
-                .logo-track {
-                    display: flex;
-                    animation: scroll 25s linear infinite;
-                    width: fit-content;
-                }
-                .logo-item {
-                    flex-shrink: 0;
-                    padding: 0;
-                    background: transparent;
-                    margin: 0 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 281px;
-                    height: 179px;
-                }
-                .logo-item img {
-                    width: 281px;
-                    height: 179px;
-                    object-fit: contain;
-                    object-position: center;
-                }
-                @keyframes scroll {
-                    0% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-50%);
-                    }
-                }
-                .logo-slider:hover .logo-track {
-                    animation-play-state: paused;
-                }
-            </style>
+            <h2 class="section-title">Trusted By <span>Leading Organizations</span></h2>
             <div class="logo-slider">
                 <div class="logo-track">
                     <!-- First set of logos -->
-                    <div><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
+                    <div class="logo-item"><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
                     <div class="logo-item"><img src="images/hdfc-bank-logo.jpeg" alt="HDFC Bank"></div>
                     <div class="logo-item"><img src="images/globant-logo.jpeg" alt="Globant"></div>
                     <div class="logo-item"><img src="images/bajaj-electrical-logo.jpeg" alt="Bajaj Electrical"></div>
@@ -1275,9 +680,9 @@
                     <div class="logo-item"><img src="images/idfc-first-logo.jpeg" alt="IDFC First"></div>
                     <div class="logo-item"><img src="images/messy-logo.jpeg" alt="Messy"></div>
                     <div class="logo-item"><img src="images/sonalika-logo.jpeg" alt="Sonalika"></div>
-                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Sonalika"></div>
+                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Diamond Parks"></div>
                     <!-- Duplicate set for seamless loop -->
-                    <div><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
+                    <div class="logo-item"><img src="images/tata-motors-logo.jpeg" alt="Tata Motors"></div>
                     <div class="logo-item"><img src="images/hdfc-bank-logo.jpeg" alt="HDFC Bank"></div>
                     <div class="logo-item"><img src="images/globant-logo.jpeg" alt="Globant"></div>
                     <div class="logo-item"><img src="images/bajaj-electrical-logo.jpeg" alt="Bajaj Electrical"></div>
@@ -1285,14 +690,14 @@
                     <div class="logo-item"><img src="images/idfc-first-logo.jpeg" alt="IDFC First"></div>
                     <div class="logo-item"><img src="images/messy-logo.jpeg" alt="Messy"></div>
                     <div class="logo-item"><img src="images/sonalika-logo.jpeg" alt="Sonalika"></div>
-                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Sonalika"></div>
+                    <div class="logo-item"><img src="images/diamond-parks.jpeg" alt="Diamond Parks"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Event Gallery Section -->
-    <section class="section" style="background-color: #fafafa;">
+    <section class="section gallery-section" id="events">
         <div class="container">
             <h2 class="section-title">🎪 Past Event <span>Highlights</span></h2>
             <div class="event-gallery">
@@ -1371,61 +776,34 @@
         </div>
     </section>
 
-    <!-- Target Audience Section -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">🎯 हा Workshop <span>कोणासाठी</span> आहे?</h2>
-            <div class="audience-grid">
-                <div class="audience-card">
-                    <h3>Students</h3>
-                </div>
-                <div class="audience-card">
-                    <h3>Professionals</h3>
-                </div>
-                <div class="audience-card">
-                    <h3>Businessmans</h3>
-                </div>
-                <div class="audience-card">
-                    <h3>Anchors</h3>
-                </div>
-                 <div class="audience-card">
-                    <h3>Trainers</h3>
-                </div>
-                <div class="audience-card">
-                    <h3>Everyone with Stage Fear</h3>
-                </div>
-            </div>
-            <div style="text-align: center;">
-                <a href="#contact" class="workshop-register-btn" style="margin-top: 0;">Register Now at ₹99/-</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Testimonials Section -->
-    <section class="section testimonials-section">
+    <section class="section testimonials-section" id="testimonials">
         <div class="container">
-            <h2 class="section-title">⭐ विद्यार्थ्यांचे <span>अनुभव</span></h2>
+            <h2 class="section-title">⭐ What People <span>Say</span></h2>
             <div class="testimonials-grid">
-
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"या कोर्समुळे माझा आत्मविश्वास खूप वाढला. आता मी कोणत्याही स्टेजवर बोलू शकतो. कंचन मॅडम खूप छान शिकवतात."</p>
+                    <p class="testimonial-text">"Excellent anchoring at our Annual Day! Energetic, confident, and excellent stage presence. The audience engagement made the event truly memorable."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">प्र</div>
+                        <div class="testimonial-avatar">
+                            <img src="images/kumar-dede.jpeg" alt="Kumar Dede" style="width: 135%; height: 135%;">
+                        </div>
                         <div class="testimonial-details">
-                            <h4>प्रिया शर्मा</h4>
-                            <p>MBA विद्यार्थिनी</p>
+                            <h4>Kumar Dede</h4>
+                            <p>Teacher</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Corporate presentations मध्ये खूप मदत झाली. Voice modulation आणि body language techniques फार उपयुक्त आहेत."</p>
+                    <p class="testimonial-text">"Your professionalism and positive spirit were deeply appreciated. You didn't just anchor the event — you elevated it. Grateful! 🙏"</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">र</div>
+                        <div class="testimonial-avatar">
+                            <img src="images/manasi-p.jpeg" alt="Manasi P" style="width: 135%; height: 135%;">
+                        </div>
                         <div class="testimonial-details">
-                            <h4>राहुल पाटील</h4>
+                            <h4>Manasi P</h4>
                             <p>IT Professional</p>
                         </div>
                     </div>
@@ -1433,24 +811,28 @@
 
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"मला stage fear खूप होता. पण या कोर्सनंतर मी confident होऊन बोलू लागले. Thank you Kanchan mam!"</p>
+                    <p class="testimonial-text">"Ultimate event anchor! Unparalleled energy, intelligence, and charm. Highly recommend for any wedding, function, or celebration! 💃🏻👏"</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">स</div>
+                        <div class="testimonial-avatar">
+                            <img src="images/vanita-dhalani.jpeg" alt="Vanita Dhalani" style="width: 135%; height: 135%;">
+                        </div>
                         <div class="testimonial-details">
-                            <h4>संजना देशमुख</h4>
-                            <p>Aspiring Anchor</p>
+                            <h4>Vanita Dhalani</h4>
+                            <p>Corporate Trainer</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Best investment for my career! आता मी workshops आणि seminars conduct करतो. Highly recommend या कोर्सची."</p>
+                    <div class="testimonial-stars">★★★★</div>
+                    <p class="testimonial-text">"या Training ने माझं व्यक्तिमत्त्व घडवलं. आत्मविश्वास आणि सादरीकरण कौशल्य खूप वाढलं. Thank you so much mam!"</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">व</div>
+                        <div class="testimonial-avatar">
+                            <img src="images/vaishnavi.jpeg" alt="Vaishnavi Raut" style="width: 135%; height: 135%;">
+                        </div>
                         <div class="testimonial-details">
-                            <h4>विकास गुप्ते</h4>
-                            <p>Corporate Trainer</p>
+                            <h4>Vaishnavi Raut</h4>
+                            <p>Aspiring Anchor</p>
                         </div>
                     </div>
                 </div>
@@ -1459,10 +841,12 @@
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">"माझ्या entrepreneurial journey मध्ये या skills ची खूप गरज होती. Perfect course for business owners!"</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">मे</div>
+                        <div class="testimonial-avatar">
+                            <img src="images/abhijeet-dolase.jpeg" alt="Abhijeet Dolase" style="width: 135%; height: 135%;">
+                        </div>
                         <div class="testimonial-details">
-                            <h4>मेघना कुलकर्णी</h4>
-                            <p>Entrepreneur</p>
+                            <h4>Abhijeet Dolase</h4>
+                            <p>Chartered Accountant</p>
                         </div>
                     </div>
                 </div>
@@ -1478,73 +862,55 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Trainer Profile Section -->
-    <section class="section trainer-section">
-        <div class="trainer-container">
-            <div class="trainer-image-wrapper">
-                <img src="images/kanchan-pic-2.jpeg" alt="Kanchan Gadakh - Professional Anchor & Trainer">
-            </div>
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <h2 class="section-title">Get in <span>Touch</span></h2>
+                    <p>Interested in booking me for your event or joining a training program? Let's connect!</p>
+                </div>
 
-            <div class="trainer-content">
-                <h2>Meet Your Trainer</h2>
-                <h3>Kanchan Gadakh</h3>
-                <p>🎤 Communications & Career Coach</p>
-                <p>⭐ Celebrity Anchor</p>
-                <p>📚 5+ years of experience in public speaking training and corporate workshops</p>
-                <a href="https://www.instagram.com/anchorkanchangadakh/" target="_blank" class="social-link">
-                    📱 Follow on Instagram
-                </a>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h4>📱 Follow Me</h4>
+                        <p>Stay updated with my latest events and workshops</p>
+                        <a href="https://www.instagram.com/anchorkanchangadakh/" target="_blank" class="social-link">
+                            Instagram
+                        </a>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>💼 Book for Events</h4>
+                        <p>Professional anchoring services</p>
+                        <a href="https://www.instagram.com/anchorkanchangadakh/" target="_blank" class="social-link">
+                            Contact via DM
+                        </a>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h4>📧 Training Programs</h4>
+                        <p>Public speaking and voice coaching</p>
+                        <a href="https://www.instagram.com/anchorkanchangadakh/" target="_blank" class="social-link">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Sticky Footer Registration Bar -->
-    <div class="sticky-footer" id="stickyFooter">
-        <div class="sticky-footer-container">
-            <div class="sticky-footer-info">
-                <div class="sticky-footer-urgent">
-                    <span class="blink-text">
-                        Almost Full - Only 5 Seats Left!
-                    </span>
-                </div>
-                <div class="sticky-footer-deadline">
-                    Registration ends on 20 Feb 2026
-                </div>
-            </div>
-            <div class="sticky-footer-btn">
-                <a href="#contact">Register Now at ₹99/-</a>
-            </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Kanchan Gadakh. All rights reserved.</p>
+            <p>Professional Anchor | Public Speaking Coach | Communications Trainer</p>
         </div>
-    </div>
-
-    <script>
-        // Show/hide sticky footer based on scroll position
-        const stickyFooter = document.getElementById('stickyFooter');
-        const workshopRegisterBtn = document.querySelector('.workshop-register-btn');
-
-        function checkScrollPosition() {
-            if (workshopRegisterBtn) {
-                const btnRect = workshopRegisterBtn.getBoundingClientRect();
-                const isButtonVisible = btnRect.top < window.innerHeight && btnRect.bottom > 0;
-
-                if (!isButtonVisible && btnRect.top < 0) {
-                    stickyFooter.classList.add('show');
-                } else {
-                    stickyFooter.classList.remove('show');
-                }
-            }
-        }
-
-        window.addEventListener('scroll', checkScrollPosition);
-        window.addEventListener('load', checkScrollPosition);
-    </script>
+    </footer>
 
 </body>
 </html>
