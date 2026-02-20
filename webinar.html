@@ -232,6 +232,42 @@
             animation: textBlink 1s ease-in-out infinite;
         }
 
+        .top-banner {
+            background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%);
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 3px solid #5E3A9A;
+        }
+
+        .top-banner h2 {
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.3;
+        }
+
+        @media (max-width: 768px) {
+            .top-banner {
+                padding: 12px 15px;
+            }
+
+            .top-banner h2 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .top-banner {
+                padding: 10px 12px;
+            }
+
+            .top-banner h2 {
+                font-size: 14px;
+            }
+        }
+
         /* Sticky Footer Bar */
         .sticky-footer {
             position: fixed;
@@ -1019,71 +1055,410 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+
+        /* Tablet Styles (768px - 1024px) */
+        @media (max-width: 1024px) {
             .hero-section h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .hero-section .tagline {
-                font-size: 18px;
+                font-size: 20px;
+            }
+
+            .workshop-container {
+                gap: 40px;
+            }
+
+            .workshop-image img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .logo-item {
+                width: 200px;
+                height: 130px;
+            }
+
+            .logo-item img {
+                width: 200px;
+                height: 130px;
+            }
+
+            .event-gallery {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .gallery-middle {
+                grid-column: span 2;
+            }
+
+            .gallery-celebrity,
+            .gallery-cultural {
+                display: contents;
+            }
+
+            .modules-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile Styles (max-width: 768px) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero-section {
+                padding: 40px 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 26px;
+                line-height: 1.3;
+            }
+
+            .hero-section .subtitle {
+                font-size: 16px;
+            }
+
+            .hero-section .tagline {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 50px 20px;
             }
 
             .section-title {
-                font-size: 26px;
+                font-size: 24px;
+            }
+
+            .workshop-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 30px 20px;
+            }
+
+            .workshop-image {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .workshop-image img {
+                width: 220px;
+                height: 220px;
+            }
+
+            .workshop-profile-name {
+                font-size: 20px;
+            }
+
+            .workshop-profile-title {
+                font-size: 13px;
+            }
+
+            .workshop-details {
+                padding: 30px 20px;
+            }
+
+            .workshop-details h2 {
+                font-size: 22px;
+            }
+
+            .workshop-info-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .workshop-info-item {
+                padding: 15px;
+            }
+
+            .workshop-info-value {
+                font-size: 16px;
+            }
+
+            .workshop-register-btn {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            .modules-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
 
             .module-card {
+                padding: 25px 20px;
+            }
+
+            .module-card h3 {
+                font-size: 20px;
+            }
+
+            .module-card li {
+                font-size: 14px;
+            }
+
+            .logo-item {
+                width: 180px;
+                height: 115px;
+                margin: 0 10px;
+            }
+
+            .logo-item img {
+                width: 180px;
+                height: 115px;
+            }
+
+            .event-gallery {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-middle {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .gallery-celebrity,
+            .gallery-cultural {
+                display: contents;
+            }
+
+            .portrait-left img,
+            .portrait-right img {
+                min-height: 280px;
+            }
+
+            .gallery-middle .gallery-item img {
+                height: 200px;
+            }
+
+            .wide-item {
+                grid-column: span 1;
+            }
+
+            .audience-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .audience-card {
+                padding: 20px;
+            }
+
+            .audience-card h3 {
+                font-size: 18px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .info-box {
                 padding: 25px;
             }
 
-            .cta-section h2 {
-                font-size: 28px;
+            .info-box h3 {
+                font-size: 20px;
             }
 
-            .pricing-grid,
-            .testimonials-grid {
+            .trainer-container {
                 grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+                padding: 30px 20px;
             }
 
-            .contact-form {
-                padding: 30px 20px;
+            .trainer-content {
+                text-align: center;
+            }
+
+            .trainer-image-wrapper img {
+                width: 240px;
+                height: 240px;
+            }
+
+            .trainer-content h2 {
+                font-size: 26px;
+            }
+
+            .trainer-content h3 {
+                font-size: 30px;
+            }
+
+            .trainer-content p {
+                font-size: 16px;
+            }
+
+            .cta-section {
+                padding: 60px 20px;
+            }
+
+            .cta-section h2 {
+                font-size: 26px;
+            }
+
+            .cta-button {
+                padding: 16px 35px;
+                font-size: 18px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .pricing-card {
+                padding: 30px 25px;
             }
 
             .price {
                 font-size: 36px;
             }
 
-            .workshop-container {
+            .testimonials-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 20px;
             }
 
-            .workshop-image img {
-                width: 250px;
-                height: 250px;
+            .testimonial-card {
+                padding: 25px;
             }
 
-            .workshop-profile-name {
-                font-size: 22px;
-            }
-
-            .workshop-profile-title {
+            .testimonial-text {
                 font-size: 14px;
             }
 
-            .workshop-info-grid {
+            .testimonial-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 18px;
+            }
+
+            .testimonial-details h4 {
+                font-size: 14px;
+            }
+
+            .testimonial-details p {
+                font-size: 12px;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+
+            .contact-info {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+
+        /* Small Mobile Styles (max-width: 480px) */
+        @media (max-width: 480px) {
+            .hero-section h1 {
+                font-size: 22px;
+            }
+
+            .hero-section .subtitle {
+                font-size: 14px;
+            }
+
+            .hero-section .tagline {
+                font-size: 14px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .workshop-image img {
+                width: 180px;
+                height: 180px;
+            }
+
+            .workshop-profile-name {
+                font-size: 18px;
             }
 
             .workshop-details h2 {
+                font-size: 20px;
+            }
+
+            .workshop-register-btn {
+                padding: 14px 25px;
+                font-size: 16px;
+            }
+
+            .module-card h3 {
+                font-size: 18px;
+            }
+
+            .logo-item {
+                width: 150px;
+                height: 95px;
+                margin: 0 8px;
+            }
+
+            .logo-item img {
+                width: 150px;
+                height: 95px;
+            }
+
+            .gallery-middle .gallery-item img {
+                height: 180px;
+            }
+
+            .portrait-left img,
+            .portrait-right img {
+                min-height: 250px;
+            }
+
+            .trainer-image-wrapper img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .trainer-content h2 {
+                font-size: 22px;
+            }
+
+            .trainer-content h3 {
                 font-size: 26px;
+            }
+
+            .trainer-content p {
+                font-size: 14px;
+            }
+
+            .social-link {
+                padding: 12px 30px;
+                font-size: 14px;
+            }
+
+            .sticky-footer-urgent {
+                font-size: 16px;
+            }
+
+            .sticky-footer-deadline {
+                font-size: 13px;
+            }
+
+            .sticky-footer-btn a {
+                padding: 12px 25px;
+                font-size: 16px;
             }
         }
     </style>
 </head>
 <body>
-    <div style="background: linear-gradient(135deg, #D4447E 0%, #A3366A 100%); padding: 15px 20px; text-align: center; border-bottom: 3px solid #5E3A9A;">
-        <h2 style="color: white; font-size: 22px; font-weight: 700; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); line-height: 1.3;">
+    <div class="top-banner">
+        <h2>
             🔥 1-Hour Live Online Webinar on 20 Feb | <span class="blink-text">Only 5 Seats Left!</span>
         </h2>
     </div>
